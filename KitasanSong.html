@@ -54,12 +54,27 @@
     font-weight: 900;
     }
     .red-box{
+      transition:width, 1s, ease-in, 1s;
       width: 100px;
       height: 100px;
       background-color: red;
     }
     .red-box:hover{
       background-color: blue;
+    }
+    .kita{
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      animation-name: kita;
+      animation-duration: 5s;
+      animation-delay: 3s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes kita{
+      0%{background-color: black;}
+      50%{background-color: #f00;}
+      100%{background-color: yellow;}
     }
   </style>
 </head>
@@ -95,13 +110,13 @@
   <fieldset>
     <legend>좋아하는 노래</legend>
     <input type="checkbox" id="우마뾰이의 전설" name="우마뾰이의 전설" value="우마뾰이의 전설">
-    <label for="우마뾰이의 전설">우마뾰이의 전설</label><br>
+    <label for="우마뾰이의 전설">우마뾰이의 전설</label>
     <input type="checkbox" id="친구를 위한 키타산 노래" name="친구를 위한 키타산 노래" value="친구를 위한 키타산 노래">
-    <label for="친구를 위한 키타산 노래">친구를 위한 키타산 노래</label><br>
+    <label for="친구를 위한 키타산 노래">친구를 위한 키타산 노래</label>
     <input type="checkbox" id="Make Debut" name="Make Debut" value="Make Debut">
-    <label for="Make Debut">Make Debut</label><br>
+    <label for="Make Debut">Make Debut</label>
     <input type="checkbox" id="Ms.Victoria" name="Ms.Victoria" value="Ms.Victoria">
-    <label for="Ms.Victoria">Ms.Victoria</label><br>
+    <label for="Ms.Victoria">Ms.Victoria</label>
   </fieldset>
   <!--오늘 한것20230403-->
   <!--1.iframe 쓰는법- 유튭 공유 가져오기-->
@@ -110,5 +125,6 @@
   <!--4.position-->
   <div class="red-box"></div>
   <!--테스트-->
+  <div class="kita"></div>
 </body>
 </html>

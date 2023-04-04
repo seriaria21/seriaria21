@@ -6,8 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>키타산 다이스키</title>
   <style>
+    *{
+      box-sizing: border-box;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
     body{
-      margin:20px 10px;
+      background-color: rgb(255, 235, 182);
+    }
+    article{
+      margin: 30px;
+      background-color: rgb(22, 22, 22);
+      width:320px;
+      height: 245px;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    .login-form{
+      width: 300px;
+      border: 0;
+      border-radius: 5px;
+      background-color: rgb(255, 255, 44);
+      padding: 20px;
+      margin: 0 auto;
+    }
+    .text-field{
+      font-size: 14px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+    }
+    .submit-btn{
+      color: red;
+      font-size: 14px;
+      background-color:rgb(22, 22, 22);
+      margin-bottom:30px;
+      padding:10px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .links{
+      text-align: center;
+    }
+    .links a {
+      font-size: 12px;
+      color: red
     }
     li{
       list-style: none;
@@ -22,6 +68,7 @@
       font-size:50px;
       line-height:20px;
       font-weight:700;
+      
     }
     .song{
       font-weight:600;
@@ -42,16 +89,19 @@
       width: 115px;
       height: 30px;
     }
-    .fri{
-      width: 270px;
-      height: 30px;
-      margin:auto;
-    }
     .list{
       width:300px;
-      background:url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MjhfMzQg%2FMDAxNjU2NDI1MzUwMjg5.Ij4L2e0eRO3LSdn0hdjjkyXAYDgWzVdcY0uUBZh2Gnwg.CX9__aqlseJ2kqPdQ10e9ef4h4OOb5e1hu2DgoOoj3og.JPEG.honestpsc17%2Fbandicam_2022-06-28_23-08-44-075.jpg&type=sc960_832) round;
-      color: #f00;
-    font-weight: 900;
+      background-color:black;
+      padding:10px;
+      border:none;
+      border-radius: 5px;
+      text-align: center;
+      color: rgb(151, 151, 151);
+      font-weight: 900;
+      margin: 30px;
+    }
+    .listlist{
+      color:#f00
     }
     .red-box{
       transition:width, 1s, ease-in, 1s;
@@ -76,37 +126,45 @@
       50%{background-color: #f00;}
       100%{background-color: yellow;}
     }
+    .utube{
+      margin: 30px;
+      border:none;
+      border-radius: 50px;
+    }
   </style>
 </head>
+<body>
   <header>
     <div class="kitasan">
-      <h1>키타산 다이스키</h1> 
-      <h3 class="song">키타산 노래 모음</h3> 
+      <h1>키타산 다이스키</h1>
+      <h3 class="song">키타산 노래 모음</h3>
     </div>
-    <nav style="color:red; font-size:24px;">
-      우마뾰이의 전설
-    </nav>
-    <nav class=fri style="color:yellow; font-size:24px; background-color: black";>
-      친구를 위한 키타산 노래
-    </nav>
   </header>
-  <section>노래 모음</section>
-  <article>로그인</article>
-  <aside>파루잔만세</aside>
-  <footer>키타산만만세</footer>
+  <article>
+    <div class="login-form">
+      <form>
+        <input type="text" name="email" class="text-field" placeholder="아이디">
+        <input type="text" name="password" class="text-field" placeholder="비밀번호">
+        <input type="submit" value="로그인" class="submit-btn">
+      </form>
+      <div class="links">
+        <a href="#">비밀번호를 잊어버리셨나요?</a>
+      </div>
+    </div>
+  </article>
   <form>
     <fieldset class="list">
-      <legend>리스트</legend>
+      <h1 class="listlist">리스트</h1>
       <p>우마뾰이의 전설</p>
       <p>친구를 위한 키타산 노래</p>
       <p>Make Debut</p>
       <p>Ms.Victoria</p>
     </fieldset>
   </form>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/5Q6p6UfCgoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/tHzgYpS3wMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/BcIUVCAKz5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/dX1Q3jY3Ejo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="utube" width="560" height="315" src="https://www.youtube.com/embed/5Q6p6UfCgoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="utube" width="560" height="315" src="https://www.youtube.com/embed/tHzgYpS3wMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="utube" width="560" height="315" src="https://www.youtube.com/embed/BcIUVCAKz5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="utube" width="560" height="315" src="https://www.youtube.com/embed/dX1Q3jY3Ejo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <fieldset>
     <legend>좋아하는 노래</legend>
     <input type="checkbox" id="우마뾰이의 전설" name="우마뾰이의 전설" value="우마뾰이의 전설">
@@ -125,6 +183,9 @@
   <!--4.position-->
   <div class="red-box"></div>
   <!--테스트-->
+  <!--오늘 한 것 20230404--
+    로그인 페이지 만들기, margin,padding 활용>
+
   <div class="kita"></div>
 </body>
 </html>

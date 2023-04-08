@@ -4,30 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>키타산 다이스키</title>
+  <title>Document</title>
+  <link rel="stylesheet" href="flex-basic.css">
+  <style>
+    .flex-container{
+      width: 300px;
+      height: 200px;
+      background-color: #c4c4c4;
+      border:1px solid black;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .flex-item{
+      color:white;
+      background-color: #ff5252;
+    }
+    .flex-item:nth-child(2n){
+      background-color: #bf5e5e;
+    }
+  </style>
 </head>
-<p>
-  <!-- 웹 페이지에 표시할 내용을 적습니다. -->
-<dl>
-<p width="200pt"><dt>키타산블랙</dt></p>
-  <dd><strong><strong>키타산 블랙</strong></strong> 다이스키</dd>
-</dl>
-<h1>
-  <p>
-    <em>키타산 블랙</em> 
-    노래
-  </p>
-</h1>
-  <a href="https://www.youtube.com/watch?v=tHzgYpS3wMo" target="_blank"><img width="300px" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAxMjlfMTk4%2FMDAxNjc1MDAwMjc1NzIx.9ym_qJyfkKh-elLQE6pY6-JMijrsC_5oe4QjKm8bTbgg.LtpSHuBOYzJr8XVZK_rnCk5gd7DLCj8HYQXFmnNkhH0g.JPEG.tigerok7%2Fscardillust_10055.jpg&type=sc960_832" alt="키타산 블랙 노래">
-  </a>
-<form action="#" method="post"></form>
-<input type="text" name="이름" value="키타산 블랙">
-<input type="color" name="색">
-<p><label>
-  <H4>아이디</H4>
-  <input type="text">
-</label></p>
-<label for="userpw">비밀번호</label>
-<input type="password" id="userpw">
+<body>
+  <div class="flex-container">
+    <div class="flex-item">item-1</div>
+    <div class="flex-item">item-2</div>
+    <div class="flex-item">item-3</div>
+    <div class="flex-item">item-4</div>
+  </div>
 </body>
 </html>
